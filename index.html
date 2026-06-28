@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,18 +8,18 @@
 </head>
 
 <body class="bg-[#101044] text-white">
-  <header class="max-w-7xl mx-auto px-5 py-3">
+  <header class="max-w-7xl mx-auto px-5 py-7">
     <nav>
       <ul
         class="uppercase tracking-widers flex gap-x-4 gap-y-1 text-l justify-center sm:justify-between flex-wrap font-bold">
         <li class="sm:mr-auto">
-          <a href="" class="hover:bg-sky-600 transition colors px-2 py-1 rounded-sm">Pratik Bhattarai</a>
+          <a href="javascript:location.reload()" class="hover:bg-sky-600 transition colors px-2 py-1 rounded-sm">Pratik Bhattarai</a>
         </li>
         <li>
-          <a class="hover:bg-sky-600 transition colors px-2 py-1 rounded-sm" href="">Home</a>
+          <a class="hover:bg-sky-600 transition colors px-2 py-1 rounded-sm" href="javascript:location.reload()">Home</a>
         </li>
         <li>
-          <a class="hover:bg-sky-600 transition colors px-2 py-1 rounded-sm" href="">Skills</a>
+          <a class="hover:bg-sky-600 transition colors px-2 py-1 rounded-sm" href="#details">Details</a>
         </li>
         <li>
           <a class="hover:bg-sky-600 transition colors px-2 py-1 rounded-sm" href="">Projects</a>
@@ -31,7 +31,7 @@
     </nav>
   </header>
 
-  <section class="text-center max-w-3xl lg:max-w-7xl mx-auto px-5 py-12 grid gap-5 lg:grid-cols-2 items-center">
+  <section class="min-h-[90vh] text-center max-w-3xl lg:max-w-7xl mx-auto px-5 py-2 grid gap-5 lg:grid-cols-2 items-center">
     <img src="/hero-image.jpg" alt="profile-image" width="3000" height="4000" class="rounded-xl pb-1" />
 
     <div class="space-y-4 ">
@@ -46,16 +46,21 @@
         personal projects.
       </p>
 
+      <a href="https://github.com/pratikbhattarai76" target="_blank" rel="noopener noreferrer"
+        class="inline-block bg-sky-600 hover:bg-sky-700 transition-colors px-5 py-2 rounded-md font-bold">
+        Visit GitHub
+      </a>
+
     </div>
 
   </section>
 
-  <section class="max-w-3xl lg:max-w-7xl mx-auto px-5 py-12 grid gap-5 grid-cols-[repeat(auto-fit,minmax(14rem,1fr))]">
+  <section id="details" class="max-w-3xl lg:max-w-7xl mx-auto px-5 py-12 grid gap-5 grid-cols-2">
     <h2 class="text-3xl font-bold text-center col-span-full">Details:</h2>
     <div class="bg-linear-to-bl from-purple-800 to-blue-800 space-y-1 p-3 rounded-md">
-      <h3 class=" text-lg font-bold"> Skills:</h3>
+      <h3 class=" text-lg font-bold underline"> Skills:</h3>
       <p>These are the skills I'm most familiar with:</p>
-      <ul>
+      <ul class="list-disc list-inside">
         <li> Cloud & Infrastructure: AWS, Cloudflare</li>
         <li> Containerization: Docker, Docker Compose, Kubernetes</li>
         <li> Infrastructure as Code: Terraform, Ansible, Helm/li>
@@ -66,27 +71,14 @@
     </div>
 
     <div class="bg-linear-to-bl from-purple-800 to-blue-800 space-y-1 p-3 rounded-md">
-      <h3 class=" text-lg font-bold"> Hobbies:</h3>
+      <h3 class=" text-lg font-bold underline"> Hobbies:</h3>
       <p>These are my hobbies:</p>
-      <ul>
+      <ul class="list-disc list-inside">
         <li> Singing </li>
         <li> Playing Games </li>
         <li> Tinkering </li>
         <li> Reading Novels</li>
         <li> Chatting with AI </li>
-      </ul>
-    </div>
-
-    <div class="bg-linear-to-bl from-purple-800 to-blue-800 space-y-1 p-3 rounded-md">
-      <h3 class=" text-lg font-bold"> Projects:</h3>
-      <p>These are some of my projects:</p>
-      <ul>
-        <li> Cloud & Infrastructure: AWS, Cloudflare</li>
-        <li> Containerization: Docker, Docker Compose, Kubernetes</li>
-        <li> Infrastructure as Code: Terraform, Ansible, Helm/li>
-        <li> CI/CD & Automation: GitHub Actions, Argo CD</li>
-        <li> Languages: Python, Bash, Javascript</li>
-        <li> Systems & Networking: Linux, Traefik, Nginx Proxy Manager</li>
       </ul>
     </div>
 
